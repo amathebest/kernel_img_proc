@@ -17,6 +17,7 @@ public:
         this->height = height;
     }
 
+    // Getters
     string getName() {
         return this->name;
     }
@@ -39,15 +40,20 @@ public:
         }
     }
 
-    void setBands(vector<vector<int>> B, vector<vector<int>> G, vector<vector<int>> R, bool proc) {
-        if (proc == true) {
-            this->procB = B;
-            this->procG = G;
-            this->procR = R;
+    // Setters
+    void setBands(vector<vector<int>> B, vector<vector<int>> G, vector<vector<int>> R) {
+        this->B = B;
+        this->G = G;
+        this->R = R;
+    }
+
+    void setProcessedBand(vector<vector<int>> procBand, bool whichBand) {
+        if (whichBand == 0) {
+            this->procB = procBand;
+        } else if (whichBand == 1) {
+            this->procG = procBand;
         } else {
-            this->B = B;
-            this->G = G;
-            this->R = R;
+            this->procR = procBand;
         }
     }
 
