@@ -10,6 +10,17 @@
 using namespace std;
 
 class Image {
+private:
+    string name;
+    int width;
+    int height;
+    vector<vector<int>> B;
+    vector<vector<int>> G;
+    vector<vector<int>> R;
+    vector<vector<float>> procB;
+    vector<vector<float>> procG;
+    vector<vector<float>> procR;
+
 public:
     Image(string name, int width, int height) {
         this->name = name;
@@ -66,17 +77,6 @@ public:
             this->procR = procBand;
         }
     }
-
-private:
-    string name;
-    int width;
-    int height;
-    vector<vector<int>> B;
-    vector<vector<int>> G;
-    vector<vector<int>> R;
-    vector<vector<float>> procB;
-    vector<vector<float>> procG;
-    vector<vector<float>> procR;
 };
 
 #endif //KERNEL_IMG_PROC_IMAGE_H

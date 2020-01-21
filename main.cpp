@@ -16,6 +16,7 @@ int main() {
     string file_name = "test.bmp";
     string test_in = input_folder + file_name;
     string test_out = output_folder + file_name;
+    bool parallel = false;
 
     // Image declaration and reading
     printf("Reading the image..\n");
