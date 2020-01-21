@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/main.cpp" "C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/CMakeFiles/kernel_img_proc.dir/main.cpp.obj"
-  "C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/tests.cpp" "C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/CMakeFiles/kernel_img_proc.dir/tests.cpp.obj"
   "C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/utils.cpp" "C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/CMakeFiles/kernel_img_proc.dir/utils.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

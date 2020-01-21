@@ -12,21 +12,17 @@ string
 vector
 -
 
-C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/utils.cpp
-typeinfo
+C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/main.cpp
+string
 -
-iostream
--
-utils.h
-C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/utils.h
-Image.h
-C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Image.h
 opencv2/core/core.hpp
 C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/opencv2/core/core.hpp
 opencv2/highgui/highgui.hpp
 C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/opencv2/highgui/highgui.hpp
-opencv2/imgproc/imgproc.hpp
-C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/opencv2/imgproc/imgproc.hpp
+utils.h
+C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/utils.h
+Image.h
+C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Image.h
 
 C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/utils.h
 Image.h
@@ -881,10 +877,6 @@ I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/opencv2/core.hpp
 I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/imgproc.hpp
 opencv2/core.hpp
 I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/opencv2/core.hpp
-
-I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/imgproc/imgproc.hpp
-opencv2/imgproc.hpp
-I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/imgproc/opencv2/imgproc.hpp
 
 I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/ml.hpp
 opencv2/core.hpp

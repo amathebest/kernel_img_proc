@@ -1,18 +1,14 @@
 //
 // Created by Matteo on 19/01/2020.
 //
-#include <typeinfo>
-#include <iostream>
 #include "utils.h"
 #include "Image.h"
 #include "opencv2/core/core.hpp"
-#include "opencv2/highgui/highgui.hpp"
-#include "opencv2/imgproc/imgproc.hpp"
 
 using namespace cv;
 using namespace std;
 
-// Function that takes an Image and a Mat object and sets the values for the bands inside the Image object
+// Function that takes an Image and a Mat object and sets the values for the bands inside the Image object.
 void storeImage(Image &pic, Mat &img, int padding) {
     // Temporary RGB matrices with padding
     vector<vector<int>> B(img.rows + padding, vector<int> (img.cols + padding, 0));
@@ -31,8 +27,19 @@ void storeImage(Image &pic, Mat &img, int padding) {
     pic.setBands(B, G, R);
 }
 
+// Function that sets the value of the pixels of the blurred image from the values of the 3 processed bands.
+void setPixels(Image &pic, cv::Mat &img) {
+    for (int i = 0; i < img.cols; i++) {
+        for (int j = 0; j < img.rows; j++) {
+            img.at<Vec3b>(i, j)[0] = pic.getProcBand(0)[i][j];
+            img.at<Vec3b>(i, j)[1] = pic.getProcBand(1)[i][j];
+            img.at<Vec3b>(i, j)[2] = pic.getProcBand(2)[i][j];
+        }
+    }
+}
+
 // Function that takes an Image object and applies a kernel on each of its bands.
-// It does so by setting the matrices for the processed bands
+// It does so by setting the matrices for the processed bands.
 void applyKernel(Image &pic, vector<vector<float>> kernel) {
     // Looping on the RGB bands
     for (int band = 0; band < 3; band++) {
@@ -53,4 +60,8 @@ void applyKernel(Image &pic, vector<vector<float>> kernel) {
         }
         pic.setProcessedBand(procBand, band);
     }
+}
+
+void applyKernel_parallel(Image &pic, vector<vector<float>> kernel) {
+
 }

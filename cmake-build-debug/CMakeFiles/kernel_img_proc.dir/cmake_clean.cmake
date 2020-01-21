@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/kernel_img_proc.dir/main.cpp.obj"
-  "CMakeFiles/kernel_img_proc.dir/tests.cpp.obj"
   "CMakeFiles/kernel_img_proc.dir/utils.cpp.obj"
   "kernel_img_proc.exe"
   "kernel_img_proc.exe.manifest"

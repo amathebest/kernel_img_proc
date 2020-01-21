@@ -1,7 +1,4 @@
-#include <chrono>
 #include <string>
-#include <iostream>
-//#include <filesystem>
 #include "opencv2/core/core.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "utils.h"
@@ -9,7 +6,7 @@
 
 using namespace cv;
 using namespace std;
-//namespace fs = std::filesystem;
+using namespace chrono;
 
 int main() {
     // Base path for input and output folders
@@ -21,28 +18,28 @@ int main() {
     string test_out = output_folder + file_name;
 
     // Image declaration and reading
+    printf("Reading the image..\n");
     Mat img;
     img = imread(test_in, IMREAD_COLOR);
+
+    // Setting the kernel and the padding value
+    float kernel_value = 1 / (float)9;
+    vector<vector<float>> kernel(kernel_dim, vector<float>(kernel_dim, kernel_value));
     int padding = kernel_dim-1;
+
     // Creating a new Image object and storing the image in it
     Image pic = Image(file_name, img.cols, img.rows);
     storeImage(pic, img, padding);
 
     // Applying blur effect
-    float kernel_value = 1 / (float)9;
-    vector<vector<float>> kernel(kernel_dim, vector<float>(kernel_dim, kernel_value));
-
+    printf("Processing the image..\n");
+    steady_clock::time_point time_1 = steady_clock::now();
     applyKernel(pic, kernel);
+    steady_clock::time_point time_2 = steady_clock::now();
+    printf("Time elapsed: %dms\n", duration_cast<milliseconds>(time_2 - time_1).count());
 
     // Picture output
-    for (int i = 0; i < img.cols; i++) {
-        for (int j = 0; j < img.rows; j++) {
-            img.at<Vec3b>(i, j)[0] = pic.getProcBand(0)[i][j];
-            img.at<Vec3b>(i, j)[1] = pic.getProcBand(1)[i][j];
-            img.at<Vec3b>(i, j)[2] = pic.getProcBand(2)[i][j];
-        }
-    }
-
+    setPixels(pic, img);
     imwrite(test_out, img);
 
     return 0;

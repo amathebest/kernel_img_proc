@@ -108,8 +108,6 @@ CMakeFiles/kernel_img_proc.dir/main.cpp.obj
  I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/video/background_segm.hpp
  I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/video/tracking.hpp
  I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/videoio.hpp
-CMakeFiles/kernel_img_proc.dir/tests.cpp.obj
- C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/tests.cpp
 CMakeFiles/kernel_img_proc.dir/utils.cpp.obj
  C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Image.h
  C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/utils.cpp
@@ -191,10 +189,8 @@ CMakeFiles/kernel_img_proc.dir/utils.cpp.obj
  I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/flann/saving.h
  I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/flann/timer.h
  I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/highgui.hpp
- I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/highgui/highgui.hpp
  I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/imgcodecs.hpp
  I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/imgproc.hpp
- I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/imgproc/imgproc.hpp
  I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/ml.hpp
  I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/ml/ml.inl.hpp
  I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/objdetect.hpp
