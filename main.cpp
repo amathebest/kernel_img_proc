@@ -22,34 +22,20 @@ int main() {
     // Image declaration and reading
     Mat img;
     img = imread(test, IMREAD_COLOR);
-
+    int padding = kernel_dim-1;
     // Creating a new Image object and storing the image in it
     Image pic = Image(file_name, img.cols, img.rows);
-    storeImage(pic, img);
+    storeImage(pic, img, padding);
+    cout << pic.getWidth() << endl;
+    cout << pic.getBand(0).size() << endl;
 
     // Applying blur effect
-    applyKernel(pic);
+    float kernel_value = 1 / (float)9;
+    vector<vector<float>> kernel(kernel_dim, vector<float>(kernel_dim, kernel_value));
+
+    applyKernel(pic, kernel);
 
     // Picture output
-
-
-
-    // test
-    int dim = 3;
-    vector<vector<int>> oof(dim, vector<int> (dim, 0));
-    for (int i = 0; i < dim; i++) {
-        for (int j = 0; j < dim; j++) {
-            oof[i][j] = i;
-        }
-    }
-
-
-    for (int i = 0; i < dim; i++) {
-        for (int j = 0; j < dim; j++) {
-            cout << oof[i][j];
-        }
-        cout << endl;
-    }
 
 
     return 0;

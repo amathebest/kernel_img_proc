@@ -108,8 +108,11 @@ CMakeFiles/kernel_img_proc.dir/main.cpp.obj: I:/Matteo/Downloads/opencv-4.2.0/bu
 CMakeFiles/kernel_img_proc.dir/main.cpp.obj: I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/video/tracking.hpp
 CMakeFiles/kernel_img_proc.dir/main.cpp.obj: I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/videoio.hpp
 
+CMakeFiles/kernel_img_proc.dir/tests.cpp.obj: ../tests.cpp
+
 CMakeFiles/kernel_img_proc.dir/utils.cpp.obj: ../Image.h
 CMakeFiles/kernel_img_proc.dir/utils.cpp.obj: ../utils.cpp
+CMakeFiles/kernel_img_proc.dir/utils.cpp.obj: ../utils.h
 CMakeFiles/kernel_img_proc.dir/utils.cpp.obj: I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/calib3d.hpp
 CMakeFiles/kernel_img_proc.dir/utils.cpp.obj: I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/core.hpp
 CMakeFiles/kernel_img_proc.dir/utils.cpp.obj: I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/core/affine.hpp

@@ -12,7 +12,27 @@ string
 vector
 -
 
+C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/main.cpp
+chrono
+-
+string
+-
+iostream
+-
+opencv2/core/core.hpp
+C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/opencv2/core/core.hpp
+opencv2/highgui/highgui.hpp
+C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/opencv2/highgui/highgui.hpp
+utils.h
+C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/utils.h
+Image.h
+C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Image.h
+
 C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/utils.cpp
+iostream
+-
+utils.h
+C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/utils.h
 Image.h
 C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Image.h
 opencv2/core/core.hpp
@@ -21,6 +41,12 @@ opencv2/highgui/highgui.hpp
 C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
 C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/opencv2/imgproc/imgproc.hpp
+
+C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/utils.h
+Image.h
+C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Image.h
+opencv2/core/core.hpp
+C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/opencv2/core/core.hpp
 
 I:/Matteo/Downloads/opencv-4.2.0/build/install/include/opencv2/calib3d.hpp
 opencv2/core.hpp

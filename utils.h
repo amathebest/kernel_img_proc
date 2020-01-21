@@ -8,11 +8,10 @@
 #define KERNEL_IMG_PROC_UTILS_H
 
 const int kernel_dim = 3;
-const float kernel[kernel_dim][kernel_dim] = {1/9, 1/9, 1/9, 1/9, 1/9, 1/9, 1/9, 1/9, 1/9};
 
-void storeImage(Image pic, cv::Mat img);
+void storeImage(Image pic, cv::Mat img, int padding);
 
-void applyKernel(Image pic);
+void applyKernel(Image pic, vector<vector<float>> kernel);
 
 #endif //KERNEL_IMG_PROC_UTILS_H
 

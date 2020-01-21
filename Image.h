@@ -40,6 +40,16 @@ public:
         }
     }
 
+    vector<vector<float>> getProcBand(int type) {
+        if (type == 0) {
+            return this->procB;
+        } else if (type == 1) {
+            return this->procG;
+        } else {
+            return this->procR;
+        }
+    }
+
     // Setters
     void setBands(vector<vector<int>> B, vector<vector<int>> G, vector<vector<int>> R) {
         this->B = B;
@@ -47,7 +57,7 @@ public:
         this->R = R;
     }
 
-    void setProcessedBand(vector<vector<int>> procBand, bool whichBand) {
+    void setProcessedBand(vector<vector<float>> procBand, int whichBand) {
         if (whichBand == 0) {
             this->procB = procBand;
         } else if (whichBand == 1) {
@@ -64,9 +74,9 @@ private:
     vector<vector<int>> B;
     vector<vector<int>> G;
     vector<vector<int>> R;
-    vector<vector<int>> procB;
-    vector<vector<int>> procG;
-    vector<vector<int>> procR;
+    vector<vector<float>> procB;
+    vector<vector<float>> procG;
+    vector<vector<float>> procR;
 };
 
 #endif //KERNEL_IMG_PROC_IMAGE_H

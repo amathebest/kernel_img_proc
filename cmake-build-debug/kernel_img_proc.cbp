@@ -88,6 +88,9 @@
 		<Unit filename="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/main.cpp">
 			<Option target="kernel_img_proc"/>
 		</Unit>
+		<Unit filename="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/tests.cpp">
+			<Option target="kernel_img_proc"/>
+		</Unit>
 		<Unit filename="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/utils.cpp">
 			<Option target="kernel_img_proc"/>
 		</Unit>
