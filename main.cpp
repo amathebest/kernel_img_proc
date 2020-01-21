@@ -17,17 +17,16 @@ int main() {
     string input_folder = base_path + "\\input\\";
     string output_folder = base_path + "\\output\\";
     string file_name = "test.bmp";
-    string test = input_folder + file_name;
+    string test_in = input_folder + file_name;
+    string test_out = output_folder + file_name;
 
     // Image declaration and reading
     Mat img;
-    img = imread(test, IMREAD_COLOR);
+    img = imread(test_in, IMREAD_COLOR);
     int padding = kernel_dim-1;
     // Creating a new Image object and storing the image in it
     Image pic = Image(file_name, img.cols, img.rows);
     storeImage(pic, img, padding);
-    cout << pic.getWidth() << endl;
-    cout << pic.getBand(0).size() << endl;
 
     // Applying blur effect
     float kernel_value = 1 / (float)9;
@@ -36,7 +35,15 @@ int main() {
     applyKernel(pic, kernel);
 
     // Picture output
+    for (int i = 0; i < img.cols; i++) {
+        for (int j = 0; j < img.rows; j++) {
+            img.at<Vec3b>(i, j)[0] = pic.getProcBand(0)[i][j];
+            img.at<Vec3b>(i, j)[1] = pic.getProcBand(1)[i][j];
+            img.at<Vec3b>(i, j)[2] = pic.getProcBand(2)[i][j];
+        }
+    }
 
+    imwrite(test_out, img);
 
     return 0;
 }

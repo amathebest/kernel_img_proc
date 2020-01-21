@@ -30,7 +30,7 @@ public:
         return this->height;
     }
 
-    vector<vector<int>> getBand(int type) {
+    const vector<vector<int>> &getBand(int type) const {
         if (type == 0) {
             return this->B;
         } else if (type == 1) {
@@ -40,7 +40,7 @@ public:
         }
     }
 
-    vector<vector<float>> getProcBand(int type) {
+    const vector<vector<float>> &getProcBand(int type) const {
         if (type == 0) {
             return this->procB;
         } else if (type == 1) {
@@ -51,13 +51,13 @@ public:
     }
 
     // Setters
-    void setBands(vector<vector<int>> B, vector<vector<int>> G, vector<vector<int>> R) {
+    void setBands(vector<vector<int>> const &B, vector<vector<int>> const &G, vector<vector<int>> const &R) {
         this->B = B;
         this->G = G;
         this->R = R;
     }
 
-    void setProcessedBand(vector<vector<float>> procBand, int whichBand) {
+    void setProcessedBand(vector<vector<float>> const &procBand, int whichBand) {
         if (whichBand == 0) {
             this->procB = procBand;
         } else if (whichBand == 1) {
