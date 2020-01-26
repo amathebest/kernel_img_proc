@@ -39,9 +39,11 @@ void setPixels(Image &pic, cv::Mat &img) {
 }
 
 // Function that takes an Image object and applies a kernel on each of its bands.
-// It does so by setting the matrices for the processed bands.
+// This process uses a 3x3 kernel matrix composed by 1/9 as kernel values.
+// This applies a soft blur to the image.
 void applyKernel(Image &pic, vector<vector<float>> kernel) {
-    int filter_size = 1; // Size of the filter goes from -1 to 1
+    int filter_size = 1; // This is set to 1 in order to loop from -filter_size to +filter_size
+
     // Looping on the RGB bands
     for (int band = 0; band < 3; band++) {
         vector<vector<float>> procBand(pic.getWidth(), vector<float>(pic.getHeight(), 0)); // Support matrix for the currently processed band
