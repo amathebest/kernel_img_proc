@@ -41,6 +41,7 @@ void setPixels(Image &pic, cv::Mat &img) {
 // Function that takes an Image object and applies a kernel on each of its bands.
 // It does so by setting the matrices for the processed bands.
 void applyKernel(Image &pic, vector<vector<float>> kernel) {
+    int filter_size = 1; // Size of the filter goes from -1 to 1
     // Looping on the RGB bands
     for (int band = 0; band < 3; band++) {
         vector<vector<float>> procBand(pic.getWidth(), vector<float>(pic.getHeight(), 0)); // Support matrix for the currently processed band
@@ -49,10 +50,10 @@ void applyKernel(Image &pic, vector<vector<float>> kernel) {
         for (int i = 1; i < pic.getWidth()+1; i++) {
             for (int j = 1; j < pic.getHeight()+1; j++) {
                 float acc = 0;
-                for (int kcol = 0; kcol < kernel_dim; kcol++) {
-                    for (int krow = 0; krow < kernel_dim; krow++) {
+                for (int kcol = -filter_size; kcol < filter_size+1; kcol++) {
+                    for (int krow = -filter_size; krow < filter_size+1; krow++) {
                         // Looping on kernel values and storing the accumulator value
-                        acc += currentBand[i+kcol-1][j+krow-1] * kernel[kcol][krow];
+                        acc += currentBand[i+(kcol+1)-1][j+(krow+1)-1] * kernel[kcol+1][krow+1];
                     }
                 }
                 procBand[i-1][j-1] = acc;
@@ -60,8 +61,4 @@ void applyKernel(Image &pic, vector<vector<float>> kernel) {
         }
         pic.setProcessedBand(procBand, band);
     }
-}
-
-void applyKernel_parallel(Image &pic, vector<vector<float>> kernel) {
-
 }

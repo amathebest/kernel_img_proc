@@ -13,15 +13,14 @@ int main() {
     string base_path = "C:\\Users\\Matteo\\Dropbox\\University\\11\\PC\\kernel_img_proc";
     string input_folder = base_path + "\\input\\";
     string output_folder = base_path + "\\output\\";
-    string file_name = "test.bmp";
-    string test_in = input_folder + file_name;
-    string test_out = output_folder + file_name;
-    bool parallel = false;
+    string file_name = "pic.bmp";
+    string file_in = input_folder + file_name;
+    string file_out = output_folder + file_name;
 
     // Image declaration and reading
     printf("Reading the image..\n");
     Mat img;
-    img = imread(test_in, IMREAD_COLOR);
+    img = imread(file_in, IMREAD_COLOR);
 
     // Setting the kernel and the padding value
     float kernel_value = 1 / (float)9;
@@ -35,13 +34,15 @@ int main() {
     // Applying blur effect
     printf("Processing the image..\n");
     steady_clock::time_point time_1 = steady_clock::now();
+
     applyKernel(pic, kernel);
+
     steady_clock::time_point time_2 = steady_clock::now();
-    printf("Time elapsed: %dms\n", duration_cast<milliseconds>(time_2 - time_1).count());
+    printf("Time elapsed: %Id[ns]\n", duration_cast<nanoseconds>(time_2 - time_1).count());
 
     // Picture output
     setPixels(pic, img);
-    imwrite(test_out, img);
+    imwrite(file_out, img);
 
     return 0;
 }

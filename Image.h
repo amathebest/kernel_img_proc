@@ -14,6 +14,7 @@ private:
     string name;
     int width;
     int height;
+
     vector<vector<int>> B;
     vector<vector<int>> G;
     vector<vector<int>> R;

@@ -5,9 +5,15 @@
       <config projectName="kernel_img_proc" targetName="kernel_img_proc" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Release" CONFIG_NAME="Release">
+        <ADDITIONAL_GENERATION_ENVIRONMENT>
+          <envs>
+            <env name="OpenCV" value="I:/Matteo/opencv-4.2.0/build/bin/Release" />
+          </envs>
+        </ADDITIONAL_GENERATION_ENVIRONMENT>
+      </configuration>
     </configurations>
   </component>
   <component name="ChangeListManager">
@@ -20,7 +26,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -34,9 +40,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RunManager">
-    <configuration name="kernel_img_proc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="kernel_img_proc" TARGET_NAME="kernel_img_proc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="kernel_img_proc" RUN_TARGET_NAME="kernel_img_proc">
+    <configuration name="kernel_img_proc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="kernel_img_proc" TARGET_NAME="kernel_img_proc" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="kernel_img_proc" RUN_TARGET_NAME="kernel_img_proc">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -73,6 +81,19 @@
       <workItem from="1579625467704" duration="141000" />
       <workItem from="1579625615544" duration="349000" />
       <workItem from="1579626171364" duration="2930000" />
+      <workItem from="1579682811150" duration="2015000" />
+      <workItem from="1579699070212" duration="1211000" />
+      <workItem from="1579701914516" duration="599000" />
+      <workItem from="1579766854629" duration="3236000" />
+      <workItem from="1579776978731" duration="6367000" />
+      <workItem from="1579797207918" duration="1834000" />
+      <workItem from="1579801193672" duration="2249000" />
+      <workItem from="1579854219548" duration="667000" />
+      <workItem from="1579855250964" duration="828000" />
+      <workItem from="1579856687745" duration="12828000" />
+      <workItem from="1579942075035" duration="10549000" />
+      <workItem from="1580040983268" duration="118000" />
+      <workItem from="1580041109031" duration="6079000" />
     </task>
     <servers />
   </component>
@@ -80,22 +101,42 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="977" height="615" key="GridCell.Tab.0.bottom" timestamp="1579639353849">
+    <state x="552" y="179" key="#Notifications" timestamp="1579802232303">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="977" height="615" key="GridCell.Tab.0.bottom/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579639353849" />
-    <state width="977" height="615" key="GridCell.Tab.0.center" timestamp="1579639353849">
+    <state x="552" y="179" key="#Notifications/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579802232303" />
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579796698991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="977" height="615" key="GridCell.Tab.0.center/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579639353849" />
-    <state width="977" height="615" key="GridCell.Tab.0.left" timestamp="1579639353849">
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579796698991" />
+    <state x="704" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579682898005">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="977" height="615" key="GridCell.Tab.0.left/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579639353849" />
-    <state width="977" height="615" key="GridCell.Tab.0.right" timestamp="1579639353849">
+    <state x="704" y="324" key="#com.intellij.fileTypes.FileTypeChooser/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579682898005" />
+    <state x="514" y="135" width="926" height="741" key="EnvironmentVariablesDialog" timestamp="1579856741381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="977" height="615" key="GridCell.Tab.0.right/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579639353849" />
+    <state x="514" y="135" width="926" height="741" key="EnvironmentVariablesDialog/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579856741381" />
+    <state width="977" height="615" key="GridCell.Tab.0.bottom" timestamp="1580052815551">
+      <screen x="1920" y="130" width="1920" height="1040" />
+    </state>
+    <state width="977" height="615" key="GridCell.Tab.0.bottom/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579893953486" />
+    <state width="977" height="615" key="GridCell.Tab.0.bottom/1920.130.1920.1040/0.0.1920.1040@1920.130.1920.1040" timestamp="1580052815551" />
+    <state width="977" height="615" key="GridCell.Tab.0.center" timestamp="1580052815551">
+      <screen x="1920" y="130" width="1920" height="1040" />
+    </state>
+    <state width="977" height="615" key="GridCell.Tab.0.center/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579893953486" />
+    <state width="977" height="615" key="GridCell.Tab.0.center/1920.130.1920.1040/0.0.1920.1040@1920.130.1920.1040" timestamp="1580052815551" />
+    <state width="977" height="615" key="GridCell.Tab.0.left" timestamp="1580052815550">
+      <screen x="1920" y="130" width="1920" height="1040" />
+    </state>
+    <state width="977" height="615" key="GridCell.Tab.0.left/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579893953486" />
+    <state width="977" height="615" key="GridCell.Tab.0.left/1920.130.1920.1040/0.0.1920.1040@1920.130.1920.1040" timestamp="1580052815550" />
+    <state width="977" height="615" key="GridCell.Tab.0.right" timestamp="1580052815551">
+      <screen x="1920" y="130" width="1920" height="1040" />
+    </state>
+    <state width="977" height="615" key="GridCell.Tab.0.right/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579893953486" />
+    <state width="977" height="615" key="GridCell.Tab.0.right/1920.130.1920.1040/0.0.1920.1040@1920.130.1920.1040" timestamp="1580052815551" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579618886212">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -112,10 +153,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579618886212" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1579541109354">
+    <state x="461" y="163" key="SettingsEditor" timestamp="1579958814980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="461" y="163" key="SettingsEditor/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579958814980" />
+    <state x="2536" y="370" key="run.anything.popup" timestamp="1580051018332">
+      <screen x="1920" y="130" width="1920" height="1040" />
+    </state>
     <state x="616" y="240" key="run.anything.popup/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579541109354" />
+    <state x="2536" y="370" key="run.anything.popup/1920.130.1920.1040/0.0.1920.1040@1920.130.1920.1040" timestamp="1580051018332" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579616793697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

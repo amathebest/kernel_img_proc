@@ -4,27 +4,27 @@
 	<Project>
 		<Option title="kernel_img_proc"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Matteo\;CMake Files\Matteo\Downloads\;CMake Files\Matteo\Downloads\opencv-4.2.0\;CMake Files\Matteo\Downloads\opencv-4.2.0\build\;CMake Files\Matteo\Downloads\opencv-4.2.0\build\install\;CMake Files\Matteo\Downloads\opencv-4.2.0\build\install\x64\;CMake Files\Matteo\Downloads\opencv-4.2.0\build\install\x64\mingw\;CMake Files\Matteo\Downloads\opencv-4.2.0\build\install\x64\mingw\lib\;"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Matteo\;CMake Files\Matteo\opencv-4.2.0\;CMake Files\Matteo\opencv-4.2.0\build\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="kernel_img_proc">
@@ -32,21 +32,71 @@
 				<Option working_dir="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="I:/Matteo/Downloads/opencv-4.2.0/build/install/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/build"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/core/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/flann/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/imgproc/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/ml/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/phase_unwrapping/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/photo/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/plot/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/quality/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/reg/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/surface_matching/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/xphoto/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/dnn/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/features2d/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/fuzzy/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/gapi/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/hfs/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/img_hash/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/imgcodecs/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/line_descriptor/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/saliency/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/text/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/videoio/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/calib3d/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/datasets/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/dnn_superres/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/highgui/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/objdetect/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/rgbd/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/shape/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/structured_light/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/ts/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/video/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/videostab/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/xfeatures2d/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/ximgproc/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/xobjdetect/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/aruco/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/bgsegm/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/bioinspired/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/ccalib/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/dnn_objdetect/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/dpm/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/face/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/optflow/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/stitching/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/superres/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/tracking/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/stereo/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\winrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 kernel_img_proc"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 kernel_img_proc"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="kernel_img_proc/fast">
@@ -54,31 +104,81 @@
 				<Option working_dir="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="I:/Matteo/Downloads/opencv-4.2.0/build/install/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/build"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/core/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/flann/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/imgproc/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/ml/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/phase_unwrapping/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/photo/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/plot/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/quality/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/reg/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/surface_matching/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/xphoto/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/dnn/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/features2d/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/fuzzy/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/gapi/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/hfs/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/img_hash/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/imgcodecs/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/line_descriptor/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/saliency/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/text/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/videoio/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/calib3d/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/datasets/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/dnn_superres/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/highgui/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/objdetect/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/rgbd/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/shape/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/structured_light/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/ts/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/video/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/videostab/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/xfeatures2d/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/ximgproc/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/xobjdetect/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/aruco/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/bgsegm/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/bioinspired/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/ccalib/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/dnn_objdetect/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/dpm/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/face/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/optflow/include"/>
+					<Add directory="I:/Matteo/opencv-4.2.0/modules/stitching/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/superres/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/tracking/include"/>
+					<Add directory="I:/Matteo/Downloads/opencv_contrib-4.2.0/opencv_contrib-4.2.0/modules/stereo/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\winrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 kernel_img_proc/fast"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 kernel_img_proc/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
@@ -97,20 +197,14 @@
 		<Unit filename="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Matteo/Downloads/opencv-4.2.0/build/install/OpenCVConfig-version.cmake">
-			<Option virtualFolder="CMake Files\Matteo\Downloads\opencv-4.2.0\build\install\"/>
+		<Unit filename="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Matteo/opencv-4.2.0/build/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\Matteo\opencv-4.2.0\build\"/>
 		</Unit>
-		<Unit filename="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Matteo/Downloads/opencv-4.2.0/build/install/OpenCVConfig.cmake">
-			<Option virtualFolder="CMake Files\Matteo\Downloads\opencv-4.2.0\build\install\"/>
+		<Unit filename="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Matteo/opencv-4.2.0/build/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\Matteo\opencv-4.2.0\build\"/>
 		</Unit>
-		<Unit filename="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Matteo/Downloads/opencv-4.2.0/build/install/x64/mingw/lib/OpenCVConfig.cmake">
-			<Option virtualFolder="CMake Files\Matteo\Downloads\opencv-4.2.0\build\install\x64\mingw\lib\"/>
-		</Unit>
-		<Unit filename="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Matteo/Downloads/opencv-4.2.0/build/install/x64/mingw/lib/OpenCVModules-release.cmake">
-			<Option virtualFolder="CMake Files\Matteo\Downloads\opencv-4.2.0\build\install\x64\mingw\lib\"/>
-		</Unit>
-		<Unit filename="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Matteo/Downloads/opencv-4.2.0/build/install/x64/mingw/lib/OpenCVModules.cmake">
-			<Option virtualFolder="CMake Files\Matteo\Downloads\opencv-4.2.0\build\install\x64\mingw\lib\"/>
+		<Unit filename="C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/Matteo/opencv-4.2.0/build/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\Matteo\opencv-4.2.0\build\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
