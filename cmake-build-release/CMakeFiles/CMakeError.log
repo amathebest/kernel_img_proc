@@ -1,47 +1,98 @@
-Detecting CXX [-std:c++14] compiler features failed to compile with the following output:
+Determining if the CUDA compiler works failed with the following output:
 Change Dir: C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_bf1d5\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\amd64\nmake.exe" -f CMakeFiles\cmTC_bf1d5.dir\build.make /nologo -L                  CMakeFiles\cmTC_bf1d5.dir\build
-Building CXX object CMakeFiles/cmTC_bf1d5.dir/feature_tests.cxx.obj
-	C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\cl.exe @C:\Users\Matteo\AppData\Local\Temp\nm849D.tmp
-feature_tests.cxx
-Linking CXX executable cmTC_bf1d5.exe
-	"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_bf1d5.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\link.exe /nologo @CMakeFiles\cmTC_bf1d5.dir\objects1.rsp @C:\Users\Matteo\AppData\Local\Temp\nm84FC.tmp
-FINAL LINK: command "C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\link.exe /nologo @CMakeFiles\cmTC_bf1d5.dir\objects1.rsp /out:cmTC_bf1d5.exe /implib:cmTC_bf1d5.lib /pdb:C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release\CMakeFiles\CMakeTmp\cmTC_bf1d5.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_bf1d5.dir/intermediate.manifest CMakeFiles\cmTC_bf1d5.dir/manifest.res" failed (exit code 1104) with the following output:
-LINK : fatal error LNK1104: cannot open file 'cmTC_bf1d5.exe'
-NMAKE : fatal error U1077: '"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe"' : return code '0xffffffff'
-Stop.
-NMAKE : fatal error U1077: '"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\amd64\nmake.exe"' : return code '0x2'
-Stop.
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_3a367/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_3a367.dir\build.make CMakeFiles/cmTC_3a367.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-release/CMakeFiles/CMakeTmp'
+Building CUDA object CMakeFiles/cmTC_3a367.dir/main.cu.obj
+C:\PROGRA~1\NVIDIA~2\CUDA\v10.2\bin\nvcc.exe    -D_WINDOWS -Xcompiler=" /GR /EHsc"  -Xcompiler="-Zi -Ob0 -Od /RTC1" -Xcompiler=-MDd   -x cu -c C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release\CMakeFiles\CMakeTmp\main.cu -o CMakeFiles\cmTC_3a367.dir\main.cu.obj -Xcompiler=-FdCMakeFiles\cmTC_3a367.dir/,-FS
+main.cu
+Linking CUDA executable cmTC_3a367.exe
+"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3a367.dir\link.txt --verbose=1
+"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_3a367.dir --rc=C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\windres.exe --mt="" --manifests  -- C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ld.exe /nologo CMakeFiles/cmTC_3a367.dir/main.cu.obj  /out:cmTC_3a367.exe /implib:cmTC_3a367.lib /pdb:C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release\CMakeFiles\CMakeTmp\cmTC_3a367.pdb /version:0.0   /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib  -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64" "cudadevrt.lib" "cudart_static.lib" 
+RC Pass 1: command "C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\windres.exe /fo CMakeFiles\cmTC_3a367.dir/manifest.res CMakeFiles\cmTC_3a367.dir/manifest.rc" failed (exit code 1) with the following output:
+Usage: C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\windres.exe [option(s)] [input-file] [output-file]
+ The options are:
+  -i --input=<file>            Name input file
+  -o --output=<file>           Name output file
+  -J --input-format=<format>   Specify input format
+  -O --output-format=<format>  Specify output format
+  -F --target=<target>         Specify COFF target
+     --preprocessor=<program>  Program to use to preprocess rc file
+     --preprocessor-arg=<arg>  Additional preprocessor argument
+  -I --include-dir=<dir>       Include directory when preprocessing rc file
+  -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+  -U --undefine <sym>          Undefine SYM when preprocessing rc file
+  -v --verbose                 Verbose - tells you what it's doing
+  -c --codepage=<codepage>     Specify default codepage
+  -l --language=<val>          Set language when reading rc file
+     --use-temp-file           Use a temporary file instead of popen to read
+                               the preprocessor output
+     --no-use-temp-file        Use popen (default)
+  -r                           Ignored for compatibility with rc
+  @<file>                      Read options from <file>
+  -h --help                    Print this help message
+  -V --version                 Print version information
+FORMAT is one of rc, res, or coff, and is deduced from the file name
+extension if not specified.  A single file name is an input file.
+No input-file is stdin, default rc.  No output-file is stdout, default rc.
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\windres.exe: supported targets: pe-x86-64 pei-x86-64 pe-bigobj-x86-64 elf64-x86-64 elf64-l1om elf64-k1om pe-i386 pei-i386 elf32-i386 elf32-iamcu elf64-little elf64-big elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_3a367.dir\build.make:86: cmTC_3a367.exe] Error -1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-release/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_3a367/fast] Error 2
 
 
 
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" failed.
+Compiler: C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe 
+Build flags: -D_WINDOWS;-Xcompiler=";/GR;/EHsc"
+Id flags:  -v;--keep;--keep-dir;tmp
 
-Detecting CUDA compiler ABI info failed to compile with the following output:
+The output was:
+1
+nvcc fatal   : Stray '"' character
+
+
+Determining if the CUDA compiler works failed with the following output:
 Change Dir: C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_fae80\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\amd64\nmake.exe" -f CMakeFiles\cmTC_fae80.dir\build.make /nologo -L                  CMakeFiles\cmTC_fae80.dir\build
-Building CUDA object CMakeFiles/cmTC_fae80.dir/CMakeCUDACompilerABI.cu.obj
-	C:\PROGRA~1\NVIDIA~2\CUDA\v10.2\bin\nvcc.exe    -D_WINDOWS -Xcompiler=" /GR /EHsc"  -Xcompiler="-Zi -Ob0 -Od /RTC1" -Xcompiler=-MDd   -Xcompiler=-v -x cu -c "E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\share\cmake-3.15\Modules\CMakeCUDACompilerABI.cu" -o CMakeFiles\cmTC_fae80.dir\CMakeCUDACompilerABI.cu.obj -Xcompiler=-FdCMakeFiles\cmTC_fae80.dir\,-FS
-cl : Command line warning D9002 : ignoring unknown option '-v'
-CMakeCUDACompilerABI.cu
-cl : Command line warning D9002 : ignoring unknown option '-v'
-CMakeCUDACompilerABI.cu
-CMakeCUDACompilerABI.cu
-cl : Command line warning D9002 : ignoring unknown option '-v'
-Linking CUDA executable cmTC_fae80.exe
-	"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_fae80.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\link.exe /nologo "CMakeFiles\cmTC_fae80.dir\CMakeCUDACompilerABI.cu.obj"  @C:\Users\Matteo\AppData\Local\Temp\nm9518.tmp
-LINK : warning LNK4044: unrecognized option '/v'; ignored
-   Creating library cmTC_fae80.lib and object cmTC_fae80.exp
-FINAL LINK: command "C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\link.exe /nologo CMakeFiles\cmTC_fae80.dir\CMakeCUDACompilerABI.cu.obj /out:cmTC_fae80.exe /implib:cmTC_fae80.lib /pdb:C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release\CMakeFiles\CMakeTmp\cmTC_fae80.pdb /version:0.0 /machine:x64 -v /debug /INCREMENTAL /subsystem:console -LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64 cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_fae80.dir/intermediate.manifest CMakeFiles\cmTC_fae80.dir/manifest.res" failed (exit code 1104) with the following output:
-LINK : warning LNK4044: unrecognized option '/v'; ignored
-LINK : warning LNK4044: unrecognized option '/v'; ignored
-LINK : fatal error LNK1104: cannot open file 'cmTC_fae80.exe'
-NMAKE : fatal error U1077: '"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe"' : return code '0xffffffff'
-Stop.
-NMAKE : fatal error U1077: '"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\amd64\nmake.exe"' : return code '0x2'
-Stop.
-
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_277ce/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_277ce.dir\build.make CMakeFiles/cmTC_277ce.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-release/CMakeFiles/CMakeTmp'
+Building CUDA object CMakeFiles/cmTC_277ce.dir/main.cu.obj
+C:\PROGRA~1\NVIDIA~2\CUDA\v10.2\bin\nvcc.exe    -D_WINDOWS -Xcompiler=" /GR /EHsc"  -Xcompiler="-Zi -Ob0 -Od /RTC1" -Xcompiler=-MDd   -x cu -c C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release\CMakeFiles\CMakeTmp\main.cu -o CMakeFiles\cmTC_277ce.dir\main.cu.obj -Xcompiler=-FdCMakeFiles\cmTC_277ce.dir/,-FS
+main.cu
+Linking CUDA executable cmTC_277ce.exe
+"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_277ce.dir\link.txt --verbose=1
+"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_277ce.dir --rc=C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\windres.exe --mt="" --manifests  -- C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ld.exe /nologo CMakeFiles/cmTC_277ce.dir/main.cu.obj  /out:cmTC_277ce.exe /implib:cmTC_277ce.lib /pdb:C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release\CMakeFiles\CMakeTmp\cmTC_277ce.pdb /version:0.0   /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib  -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64" "cudadevrt.lib" "cudart_static.lib" 
+RC Pass 1: command "C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\windres.exe /fo CMakeFiles\cmTC_277ce.dir/manifest.res CMakeFiles\cmTC_277ce.dir/manifest.rc" failed (exit code 1) with the following output:
+Usage: C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\windres.exe [option(s)] [input-file] [output-file]
+ The options are:
+  -i --input=<file>            Name input file
+  -o --output=<file>           Name output file
+  -J --input-format=<format>   Specify input format
+  -O --output-format=<format>  Specify output format
+  -F --target=<target>         Specify COFF target
+     --preprocessor=<program>  Program to use to preprocess rc file
+     --preprocessor-arg=<arg>  Additional preprocessor argument
+  -I --include-dir=<dir>       Include directory when preprocessing rc file
+  -D --define <sym>[=<val>]    Define SYM when preprocessing rc file
+  -U --undefine <sym>          Undefine SYM when preprocessing rc file
+  -v --verbose                 Verbose - tells you what it's doing
+  -c --codepage=<codepage>     Specify default codepage
+  -l --language=<val>          Set language when reading rc file
+     --use-temp-file           Use a temporary file instead of popen to read
+                               the preprocessor output
+     --no-use-temp-file        Use popen (default)
+  -r                           Ignored for compatibility with rc
+  @<file>                      Read options from <file>
+  -h --help                    Print this help message
+  -V --version                 Print version information
+FORMAT is one of rc, res, or coff, and is deduced from the file name
+extension if not specified.  A single file name is an input file.
+No input-file is stdin, default rc.  No output-file is stdout, default rc.
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\windres.exe: supported targets: pe-x86-64 pei-x86-64 pe-bigobj-x86-64 elf64-x86-64 elf64-l1om elf64-k1om pe-i386 pei-i386 elf32-i386 elf32-iamcu elf64-little elf64-big elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_277ce.dir\build.make:86: cmTC_277ce.exe] Error -1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-release/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_277ce/fast] Error 2
 
 
 

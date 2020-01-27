@@ -1,0 +1,19 @@
+Detecting CXX [-std:c++14] compiler features failed to compile with the following output:
+Change Dir: C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-release-visual-studio/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_a2331\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\amd64\nmake.exe" -f CMakeFiles\cmTC_a2331.dir\build.make /nologo -L                  CMakeFiles\cmTC_a2331.dir\build
+Building CXX object CMakeFiles/cmTC_a2331.dir/feature_tests.cxx.obj
+	C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\cl.exe @C:\Users\Matteo\AppData\Local\Temp\nmCAF6.tmp
+feature_tests.cxx
+Linking CXX executable cmTC_a2331.exe
+	"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_a2331.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\link.exe /nologo @CMakeFiles\cmTC_a2331.dir\objects1.rsp @C:\Users\Matteo\AppData\Local\Temp\nmCB74.tmp
+FINAL LINK: command "C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\link.exe /nologo @CMakeFiles\cmTC_a2331.dir\objects1.rsp /out:cmTC_a2331.exe /implib:cmTC_a2331.lib /pdb:C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio\CMakeFiles\CMakeTmp\cmTC_a2331.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_a2331.dir/intermediate.manifest CMakeFiles\cmTC_a2331.dir/manifest.res" failed (exit code 1104) with the following output:
+LINK : fatal error LNK1104: cannot open file 'cmTC_a2331.exe'
+NMAKE : fatal error U1077: '"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe"' : return code '0xffffffff'
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\amd64\nmake.exe"' : return code '0x2'
+Stop.
+
+
+
+

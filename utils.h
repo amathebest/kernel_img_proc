@@ -9,8 +9,6 @@
 
 const int kernel_dim = 3;
 
-void storeImage(Image &pic, cv::Mat &img, int padding);
-
 void setPixels(Image &pic, cv::Mat &img);
 
 void applyKernel(Image &pic, vector<vector<float>> kernel);

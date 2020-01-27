@@ -1,6 +1,7 @@
 //
 // Created by Matteo on 19/01/2020.
 //
+#include <iostream>
 #include "utils.h"
 #include "Image.h"
 #include "opencv2/core/core.hpp"
@@ -8,32 +9,13 @@
 using namespace cv;
 using namespace std;
 
-// Function that takes an Image and a Mat object and sets the values for the bands inside the Image object.
-void storeImage(Image &pic, Mat &img, int padding) {
-    // Temporary RGB matrices with padding
-    vector<vector<int>> B(img.rows + padding, vector<int> (img.cols + padding, 0));
-    vector<vector<int>> G(img.rows + padding, vector<int> (img.cols + padding, 0));
-    vector<vector<int>> R(img.rows + padding, vector<int> (img.cols + padding, 0));
-
-    // Reading the 3 matrices for R, G and B and assigning the bands to the Image object
-    for (int i = 0; i < img.cols; i++) {
-        for (int j = 0; j < img.rows; j++) {
-            Vec3b pixel = img.at<Vec3b>(i, j);
-            B[i+1][j+1] = pixel.val[0];
-            G[i+1][j+1] = pixel.val[1];
-            R[i+1][j+1] = pixel.val[2];
-        }
-    }
-    pic.setBands(B, G, R);
-}
-
 // Function that sets the value of the pixels of the blurred image from the values of the 3 processed bands.
 void setPixels(Image &pic, cv::Mat &img) {
-    for (int i = 0; i < img.cols; i++) {
-        for (int j = 0; j < img.rows; j++) {
-            img.at<Vec3b>(i, j)[0] = pic.getProcBand(0)[i][j];
-            img.at<Vec3b>(i, j)[1] = pic.getProcBand(1)[i][j];
-            img.at<Vec3b>(i, j)[2] = pic.getProcBand(2)[i][j];
+    for (int i = 0; i < img.rows; i++) {
+        for (int j = 0; j < img.cols; j++) {
+            img.at<Vec3b>(i, j)[0] = pic.getProcBand(0)[i+1][j+1];
+            img.at<Vec3b>(i, j)[1] = pic.getProcBand(1)[i+1][j+1];
+            img.at<Vec3b>(i, j)[2] = pic.getProcBand(2)[i+1][j+1];
         }
     }
 }
@@ -43,24 +25,69 @@ void setPixels(Image &pic, cv::Mat &img) {
 // This applies a soft blur to the image.
 void applyKernel(Image &pic, vector<vector<float>> kernel) {
     int filter_size = 1; // This is set to 1 in order to loop from -filter_size to +filter_size
-
     // Looping on the RGB bands
     for (int band = 0; band < 3; band++) {
-        vector<vector<float>> procBand(pic.getWidth(), vector<float>(pic.getHeight(), 0)); // Support matrix for the currently processed band
         vector<vector<int>> currentBand = pic.getBand(band); // Current processed band
+        vector<vector<float>> procBand(pic.getHeight()+2, vector<float>(pic.getWidth()+2, 0)); // Support matrix for the currently processed band
         // Looping through the image keeping the padding in consideration
-        for (int i = 1; i < pic.getWidth()+1; i++) {
-            for (int j = 1; j < pic.getHeight()+1; j++) {
+        for (int i = 1; i < pic.getHeight()+1; i++) {
+            for (int j = 1; j < pic.getWidth()+1; j++) {
                 float acc = 0;
-                for (int kcol = -filter_size; kcol < filter_size+1; kcol++) {
-                    for (int krow = -filter_size; krow < filter_size+1; krow++) {
+                for (int krow = -filter_size; krow < filter_size+1; krow++) {
+                    for (int kcol = -filter_size; kcol < filter_size + 1; kcol++) {
                         // Looping on kernel values and storing the accumulator value
-                        acc += currentBand[i+(kcol+1)-1][j+(krow+1)-1] * kernel[kcol+1][krow+1];
+                        acc += currentBand[i+krow][j+kcol] * kernel[krow+1][kcol+1];
                     }
                 }
-                procBand[i-1][j-1] = acc;
+                procBand[i][j] = acc;
             }
         }
         pic.setProcessedBand(procBand, band);
     }
 }
+/*      int w = 5;
+        int h = 3;
+        vector<vector<int>> in(h+2, vector<int>(w+2, 0));
+        vector<vector<float>> out(h+2, vector<float>(w+2, 0));
+        cout << "In: " << endl;
+        for (int i = 0; i < h+2; i++) {
+            for (int j = 0; j < w+2; j++) {
+                if (i > 0 && i < h+1 && j > 0 && j < w+1) {
+                    in[i][j] = i;
+                }
+                cout << in[i][j] << " ";
+            }
+            cout << endl;
+        }
+
+        for (int i = 1; i < h+1; i++) {
+            for (int j = 1; j < w+1; j++) {
+                float acc = 0;
+                for (int krow = -filter_size; krow < filter_size+1; krow++) {
+                    for (int kcol = -filter_size; kcol < filter_size + 1; kcol++) {
+                        // Looping on kernel values and storing the accumulator value
+                        cout << i + krow << j + kcol << "; " << i << j << "; " << krow << kcol << "; ";
+                        acc += in[i + krow][j + kcol] * kernel[krow + 1][kcol + 1];
+                    }
+                }
+                cout << endl;
+                out[i][j] = acc;
+            }
+        }
+
+        cout << "Out: " << endl;
+        for (int i = 0; i < h+2; i++) {
+            for (int j = 0; j < w+2; j++) {
+                cout << out[i][j] << " ";
+            }
+            cout << endl;
+        }
+
+        cout << "Kernel: " << endl;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                cout << kernel[i][j] << " ";
+            }
+            cout << endl;
+        }
+ */

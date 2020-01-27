@@ -11,10 +11,8 @@ using namespace std;
 
 class Image {
 private:
-    string name;
     int width;
     int height;
-
     vector<vector<int>> B;
     vector<vector<int>> G;
     vector<vector<int>> R;
@@ -23,17 +21,15 @@ private:
     vector<vector<float>> procR;
 
 public:
-    Image(string name, int width, int height) {
-        this->name = name;
+    Image(int width, int height, vector<vector<int>> B, vector<vector<int>> G, vector<vector<int>> R) {
         this->width = width;
         this->height = height;
+        this->B = B;
+        this->G = G;
+        this->R = R;
     }
 
     // Getters
-    string getName() {
-        return this->name;
-    }
-
     int getWidth() {
         return this->width;
     }
@@ -63,12 +59,6 @@ public:
     }
 
     // Setters
-    void setBands(vector<vector<int>> const &B, vector<vector<int>> const &G, vector<vector<int>> const &R) {
-        this->B = B;
-        this->G = G;
-        this->R = R;
-    }
-
     void setProcessedBand(vector<vector<float>> const &procBand, int whichBand) {
         if (whichBand == 0) {
             this->procB = procBand;
