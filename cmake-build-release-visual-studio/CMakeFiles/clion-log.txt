@@ -1,4 +1,18 @@
-"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - NMake Makefiles" C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc
+"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - NMake Makefiles" E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc
+-- The CXX compiler identification is MSVC 19.0.24215.1
+-- The CUDA compiler identification is NVIDIA 10.2.89
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/bin/amd64/cl.exe
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/bin/amd64/cl.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - failed
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working CUDA compiler: C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe
+-- Check for working CUDA compiler: C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe -- works
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - failed
+-- Found CUDA: C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2 (found version "10.2") 
+-- Found OpenCV: I:/Matteo/opencv-4.2.0/build (found version "4.2.0") 
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-release-visual-studio
+-- Build files have been written to: E:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-release-visual-studio

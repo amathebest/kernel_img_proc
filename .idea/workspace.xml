@@ -17,7 +17,38 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85010741-25ce-4588-8ffc-ab709489c8c0" name="Default Changelist" comment="" />
+    <list default="true" id="85010741-25ce-4588-8ffc-ab709489c8c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CUDA.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCUDA/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCUDA/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCUDA/a.exp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCUDA/a.exp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCUDA/a.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCUDA/a.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCUDA/tmp/CMakeCUDACompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCUDA/tmp/CMakeCUDACompilerId.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCUDA/tmp/a_dlink.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCUDA/tmp/a_dlink.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/kernel_img_proc.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/kernel_img_proc.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/kernel_img_proc.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/kernel_img_proc.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/kernel_img_proc.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/kernel_img_proc.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/kernel_img_proc.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/kernel_img_proc.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/kernel_img_proc.dir/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/CMakeFiles/kernel_img_proc.dir/utils.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-visual-studio/kernel_img_proc.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-visual-studio/kernel_img_proc.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elaborato_presentazione/Kernel-image-processing_Amatori.odp" beforeDir="false" afterPath="$PROJECT_DIR$/elaborato_presentazione/Kernel-image-processing_Amatori.odp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +71,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kernel_img_proc_cuda" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RunManager">
@@ -100,6 +131,7 @@
       <workItem from="1580240314951" duration="1243000" />
       <workItem from="1580284282819" duration="2213000" />
       <workItem from="1580396152234" duration="18000" />
+      <workItem from="1580563563227" duration="1390000" />
     </task>
     <servers />
   </component>
@@ -124,9 +156,10 @@
     </state>
     <state x="514" y="135" width="926" height="741" key="EnvironmentVariablesDialog/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579856741381" />
     <state x="2434" y="265" key="EnvironmentVariablesDialog/1920.130.1920.1040/0.0.1920.1040@1920.130.1920.1040" timestamp="1580135222626" />
-    <state x="2660" y="406" key="FileChooserDialogImpl" timestamp="1580142047016">
-      <screen x="1920" y="130" width="1920" height="1040" />
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1580574205246">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="740" y="276" key="FileChooserDialogImpl/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1580574205246" />
     <state x="2660" y="406" key="FileChooserDialogImpl/1920.130.1920.1040/0.0.1920.1040@1920.130.1920.1040" timestamp="1580142047016" />
     <state width="977" height="615" key="GridCell.Tab.0.bottom" timestamp="1580142673573">
       <screen x="1920" y="130" width="1920" height="1040" />

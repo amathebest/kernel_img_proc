@@ -44,10 +44,10 @@ RM = "E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc
+CMAKE_SOURCE_DIR = E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio
+CMAKE_BINARY_DIR = E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio
 
 # Include any dependencies generated for this target.
 include CMakeFiles\kernel_img_proc.dir\depend.make
@@ -60,40 +60,40 @@ include CMakeFiles\kernel_img_proc.dir\flags.make
 
 CMakeFiles\kernel_img_proc.dir\main.cpp.obj: CMakeFiles\kernel_img_proc.dir\flags.make
 CMakeFiles\kernel_img_proc.dir\main.cpp.obj: ..\main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/kernel_img_proc.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/kernel_img_proc.dir/main.cpp.obj"
 	C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\kernel_img_proc.dir\main.cpp.obj /FdCMakeFiles\kernel_img_proc.dir\ /FS -c C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\kernel_img_proc.dir\main.cpp.obj /FdCMakeFiles\kernel_img_proc.dir\ /FS -c E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\main.cpp
 <<
 
 CMakeFiles\kernel_img_proc.dir\main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kernel_img_proc.dir/main.cpp.i"
 	C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\cl.exe > CMakeFiles\kernel_img_proc.dir\main.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\main.cpp
 <<
 
 CMakeFiles\kernel_img_proc.dir\main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kernel_img_proc.dir/main.cpp.s"
 	C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\kernel_img_proc.dir\main.cpp.s /c C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\kernel_img_proc.dir\main.cpp.s /c E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\main.cpp
 <<
 
 CMakeFiles\kernel_img_proc.dir\utils.cpp.obj: CMakeFiles\kernel_img_proc.dir\flags.make
 CMakeFiles\kernel_img_proc.dir\utils.cpp.obj: ..\utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/kernel_img_proc.dir/utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/kernel_img_proc.dir/utils.cpp.obj"
 	C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\kernel_img_proc.dir\utils.cpp.obj /FdCMakeFiles\kernel_img_proc.dir\ /FS -c C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\utils.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\kernel_img_proc.dir\utils.cpp.obj /FdCMakeFiles\kernel_img_proc.dir\ /FS -c E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\utils.cpp
 <<
 
 CMakeFiles\kernel_img_proc.dir\utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kernel_img_proc.dir/utils.cpp.i"
 	C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\cl.exe > CMakeFiles\kernel_img_proc.dir\utils.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\utils.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\utils.cpp
 <<
 
 CMakeFiles\kernel_img_proc.dir\utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kernel_img_proc.dir/utils.cpp.s"
 	C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\kernel_img_proc.dir\utils.cpp.s /c C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\utils.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\kernel_img_proc.dir\utils.cpp.s /c E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\utils.cpp
 <<
 
 # Object files for target kernel_img_proc
@@ -113,9 +113,9 @@ kernel_img_proc.exe: I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_imgcodecs42
 kernel_img_proc.exe: I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_imgproc420.lib
 kernel_img_proc.exe: I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_core420.lib
 kernel_img_proc.exe: CMakeFiles\kernel_img_proc.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable kernel_img_proc.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable kernel_img_proc.exe"
 	"E:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\kernel_img_proc.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1.0\VC\bin\amd64\link.exe /nologo @CMakeFiles\kernel_img_proc.dir\objects1.rsp @<<
- /out:kernel_img_proc.exe /implib:kernel_img_proc.lib /pdb:C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio\kernel_img_proc.pdb /version:0.0  /machine:x64 /INCREMENTAL:NO /subsystem:console I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_highgui420.lib I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_videoio420.lib I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_imgcodecs420.lib I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_imgproc420.lib I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_core420.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:kernel_img_proc.exe /implib:kernel_img_proc.lib /pdb:E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio\kernel_img_proc.pdb /version:0.0  /machine:x64 /INCREMENTAL:NO /subsystem:console I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_highgui420.lib I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_videoio420.lib I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_imgcodecs420.lib I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_imgproc420.lib I:\Matteo\opencv-4.2.0\build\lib\Release\opencv_core420.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.
@@ -128,6 +128,6 @@ CMakeFiles\kernel_img_proc.dir\clean:
 .PHONY : CMakeFiles\kernel_img_proc.dir\clean
 
 CMakeFiles\kernel_img_proc.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio C:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio\CMakeFiles\kernel_img_proc.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio E:\Users\Matteo\Dropbox\University\11\PC\kernel_img_proc\cmake-build-release-visual-studio\CMakeFiles\kernel_img_proc.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles\kernel_img_proc.dir\depend
 

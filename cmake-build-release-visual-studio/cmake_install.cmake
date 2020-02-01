@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc
+# Install script for directory: E:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-release-visual-studio/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/Users/Matteo/Dropbox/University/11/PC/kernel_img_proc/cmake-build-release-visual-studio/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
