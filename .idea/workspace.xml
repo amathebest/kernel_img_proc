@@ -42,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../k-means" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RunManager">
@@ -103,7 +103,9 @@
       <workItem from="1580284282819" duration="2213000" />
       <workItem from="1580396152234" duration="18000" />
       <workItem from="1580563563227" duration="1390000" />
-      <workItem from="1580743118262" duration="603000" />
+      <workItem from="1580743118262" duration="1202000" />
+      <workItem from="1580829048948" duration="88000" />
+      <workItem from="1580829178034" duration="1904000" />
     </task>
     <servers />
   </component>
@@ -128,11 +130,11 @@
     </state>
     <state x="514" y="135" width="926" height="741" key="EnvironmentVariablesDialog/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579856741381" />
     <state x="2434" y="265" key="EnvironmentVariablesDialog/1920.130.1920.1040/0.0.1920.1040@1920.130.1920.1040" timestamp="1580135222626" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1580574205246">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2660" y="406" key="FileChooserDialogImpl" timestamp="1580829873268">
+      <screen x="1920" y="130" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/1920.130.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1580574205246" />
-    <state x="2660" y="406" key="FileChooserDialogImpl/1920.130.1920.1040/0.0.1920.1040@1920.130.1920.1040" timestamp="1580142047016" />
+    <state x="2660" y="406" key="FileChooserDialogImpl/1920.130.1920.1040/0.0.1920.1040@1920.130.1920.1040" timestamp="1580829873268" />
     <state width="977" height="615" key="GridCell.Tab.0.bottom" timestamp="1580142673573">
       <screen x="1920" y="130" width="1920" height="1040" />
     </state>
